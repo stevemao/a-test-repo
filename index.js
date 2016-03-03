@@ -1,5 +1,5 @@
-module.exports = function(cb) {
-	setImmediate(function() {
-		cb(null, 'a test module');
+module.exports = function() {
+	return new Promise(function(resolve) {
+		resolve('a test repo');
 	});
 };
